@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aster House | Boutique Hotel &amp; Stay</title>
+  <meta name="description"
+    content="Aster House is a refined boutique stay offering comfortable rooms, thoughtful amenities, warm hospitality, and a relaxed guest experience in Hanamkonda.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#home">Aster House</a>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+      <nav id="nav" aria-label="Primary">
+        <a href="#home">Home</a><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a
+          href="#amenities">Amenities</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+        <a class="btn btn-sm" href="#availability">Check Availability</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" id="home">
+      <img src="assets/hero.jpg" width="1600" height="1000"
+        alt="Aster House's warmly lit facade at dusk, framed by garden greenery">
+      <div class="wrap hero-copy">
+        <p class="label">ASTER HOUSE · BOUTIQUE STAY</p>
+        <h1>Stay Somewhere Worth Remembering.</h1>
+        <p>A thoughtfully designed boutique stay combining quiet comfort, local character, and warm hospitality.</p>
+        <div class="actions"><a class="btn" href="#availability">Check Availability</a><a class="btn btn-ghost"
+            href="#rooms">Explore Rooms</a></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="availability" aria-label="Check availability">
+      <form class="avail" id="availForm" novalidate>
+        <div class="f"><label for="a-in">Check-in</label><input type="date" id="a-in" name="in"></div>
+        <div class="f"><label for="a-out">Check-out</label><input type="date" id="a-out" name="out"></div>
+        <div class="f"><label for="a-g">Guests</label><input type="number" id="a-g" name="guests" min="1" max="6"
+            value="2"></div>
+        <div class="f"><label for="a-r">Room Type</label><select id="a-r" name="room">
+            <option value="">Select</option>
+            <option>Deluxe Room</option>
+            <option>Garden Suite</option>
+            <option>Aster Suite</option>
+            <option>Not Sure Yet</option>
+          </select></div>
+        <button class="btn" type="submit">Check Availability</button>
+        <p class="msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="wrap intro">
+      <div>
+        <p class="label dark">Welcome</p>
+        <h2>A Different Kind of Stay</h2>
+        <p>Aster House is designed for travelers who appreciate thoughtful details, comfortable spaces, and a slower
+          pace. From the first welcome to the final morning, every part of the stay is designed to feel effortless.</p>
+      </div>
+      <img loading="lazy" src="assets/lobby.jpg" width="1200" height="800"
+        alt="Lobby with soft seating, warm lamps and a wooden reception desk">
+    </section>
+
+    <section class="sec alt" id="rooms">
+      <div class="wrap">
+        <header class="sh">
+          <p class="label dark">Stay</p>
+          <h2>Rooms &amp; Suites</h2>
+        </header>
+        <div class="cards">
+          <article class="card"><img loading="lazy" src="assets/room-deluxe.jpg" width="1200" height="800"
+              alt="Deluxe room with a king bed, linen bedding and a small writing desk by the window">
+            <div class="cb">
+              <h3>The Deluxe Room</h3>
+              <p class="price">From ₹4,500 / night</p>
+              <p>A comfortable, light-filled room designed for relaxed stays, with a king bed, private bathroom,
+                workspace, and complimentary Wi-Fi.</p>
+              <ul>
+                <li>King bed</li>
+                <li>Private bathroom</li>
+                <li>Wi-Fi</li>
+                <li>Workspace</li>
+                <li>Breakfast available</li>
+              </ul><a class="btn btn-line" href="#contact" data-room="Deluxe Room">View Room</a>
+            </div>
+          </article>
+          <article class="card"><img loading="lazy" src="assets/room-suite.jpg" width="1200" height="800"
+              alt="Garden suite with a sitting area and large windows overlooking the garden">
+            <div class="cb">
+              <h3>The Garden Suite</h3>
+              <p class="price">From ₹6,500 / night</p>
+              <p>A spacious suite overlooking the garden, with a separate sitting area and thoughtful details for longer
+                stays.</p>
+              <ul>
+                <li>King bed</li>
+                <li>Garden view</li>
+                <li>Sitting area</li>
+                <li>Private bathroom</li>
+                <li>Wi-Fi</li>
+              </ul><a class="btn btn-line" href="#contact" data-room="Garden Suite">View Room</a>
+            </div>
+          </article>
+          <article class="card premium"><img loading="lazy" src="assets/room-premium.jpg" width="1200" height="800"
+              alt="The Aster Suite's bedroom with dark wood furnishings and a private lounge beyond">
+            <div class="cb">
+              <p class="tag">Signature</p>
+              <h3>The Aster Suite</h3>
+              <p class="price">From ₹9,000 / night</p>
+              <p>Our signature suite combines generous space, a private lounge, premium amenities, and a quiet view of
+                the property.</p>
+              <ul>
+                <li>King bed</li>
+                <li>Private lounge</li>
+                <li>Premium bathroom</li>
+                <li>Garden view</li>
+                <li>Breakfast included</li>
+              </ul><a class="btn" href="#contact" data-room="Aster Suite">View Room</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <img loading="lazy" src="assets/room-premium2.jpg" width="1200" height="800"
+        alt="Lounge of the Aster Suite with an armchair, reading lamp and soft evening light">
+      <div class="fc">
+        <p class="label">Signature Suite</p>
+        <h2>The Aster Suite</h2>
+        <p>Room to spread out, a lounge that is entirely your own, and a quiet outlook over the property. Every detail,
+          from the bedding to the lighting, is chosen so that privacy feels natural and comfort feels unhurried.</p>
+        <ul>
+          <li>Private lounge</li>
+          <li>Premium bathroom</li>
+          <li>Garden view</li>
+          <li>Breakfast included</li>
+        </ul>
+        <a class="btn" href="#contact" data-room="Aster Suite">Explore the Suite</a>
+      </div>
+    </section>
+
+    <section class="sec" id="experience">
+      <div class="wrap">
+        <header class="sh">
+          <p class="label dark">Beyond the Room</p>
+          <h2>The Aster House Experience</h2>
+          <p>A stay here is about more than a room. It is the pace, the details, and the people.</p>
+        </header>
+        <div class="exp">
+          <article><img loading="lazy" src="assets/dining.jpg" width="1200" height="800"
+              alt="Breakfast table set with fresh fruit, bread and coffee in morning light">
+            <h3>Slow Mornings</h3>
+            <p>Start the day with fresh breakfast, natural light, and a quieter pace.</p>
+          </article>
+          <article><img loading="lazy" src="assets/gallery-1.jpg" width="800" height="800"
+              alt="Locally inspired dishes and drinks arranged on a wooden table">
+            <h3>Local Flavours</h3>
+            <p>Discover thoughtfully selected food and drink inspired by the character of the region.</p>
+          </article>
+          <article><img loading="lazy" src="assets/gallery-2.jpg" width="800" height="800"
+              alt="Reading corner with armchairs and bookshelves">
+            <h3>Thoughtful Spaces</h3>
+            <p>Relax in spaces designed for reading, conversation, and unhurried evenings.</p>
+          </article>
+          <article><img loading="lazy" src="assets/pool.jpg" width="1200" height="800"
+              alt="Swimming pool with loungers surrounded by greenery">
+            <h3>Warm Hospitality</h3>
+            <p>Personal, attentive service without making your stay feel formal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt" id="amenities">
+      <div class="wrap">
+        <header class="sh">
+          <p class="label dark">Included</p>
+          <h2>Everything You Need</h2>
+        </header>
+        <ul class="amen">
+          <li><i></i>Complimentary Wi-Fi</li>
+          <li><i></i>Breakfast</li>
+          <li><i></i>Air Conditioning</li>
+          <li><i></i>Parking</li>
+          <li><i></i>24-Hour Reception</li>
+          <li><i></i>Room Service</li>
+          <li><i></i>Swimming Pool</li>
+          <li><i></i>Housekeeping</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feature rev">
+      <img loading="lazy" src="assets/dining2.jpg" width="1200" height="800"
+        alt="Breakfast spread on a sunlit terrace table with fruit, pastries and tea">
+      <div class="fc">
+        <p class="label">Dining</p>
+        <h2>Breakfast at Aster House</h2>
+        <p>Begin the morning with a relaxed breakfast featuring fresh ingredients, familiar favourites, and locally
+          inspired options. Choose a table indoors or settle outside in the garden.</p>
+        <p class="meta">Daily, 7:00 AM – 10:30 AM · Indoor and outdoor seating</p>
+        <a class="btn" href="#rooms">Explore Your Stay</a>
+      </div>
+    </section>
+
+    <section class="sec" id="gallery">
+      <div class="wrap">
+        <header class="sh">
+          <p class="label dark">Gallery</p>
+          <h2>Inside Aster House</h2>
+        </header>
+        <div class="gal">
+          <img class="g1" loading="lazy" src="assets/gallery-4.jpg" width="800" height="800"
+            alt="Warmly lit hallway with wooden floors and framed prints">
+          <img loading="lazy" src="assets/gallery-5.jpg" width="800" height="800"
+            alt="Reading corner with armchairs and bookshelves">
+          <img loading="lazy" src="assets/gallery-6.jpg" width="800" height="800"
+            alt="Bedside detail with lamp, linen and a small vase of flowers">
+          <img class="g4" loading="lazy" src="assets/gallery-7.jpg" width="800" height="800"
+            alt="Locally inspired dishes and drinks arranged on a wooden table">
+          <img loading="lazy" src="assets/gallery-8.jpg" width="800" height="800"
+            alt="Garden path lined with plants leading to the main entrance">
+          <img loading="lazy" src="assets/gallery-9.jpg" width="800" height="800"
+            alt="Bathroom with stone basin and soft towels">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <header class="sh">
+          <p class="label dark">Reviews</p>
+          <h2>What Guests Say</h2>
+        </header>
+        <div class="quotes">
+          <figure>
+            <blockquote>The rooms were beautifully designed and the whole property felt calm from the moment we arrived.
+            </blockquote>
+            <figcaption>Meera R. <span>Weekend stay</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>The team was welcoming without being intrusive. It was exactly the kind of stay we were looking
+              for.</blockquote>
+            <figcaption>Arjun &amp; Kavya <span>Couple's getaway</span></figcaption>
+          </figure>
+          <figure>
+            <blockquote>The suite, breakfast, and attention to detail made our weekend feel genuinely special.
+            </blockquote>
+            <figcaption>Rahul S. <span>Anniversary stay</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" id="location">
+      <div class="wrap loc">
+        <div>
+          <p class="label dark">Location</p>
+          <h2>Find Aster House</h2>
+          <p>Aster House sits on a quiet, tree-lined road in Hanamkonda, a short drive from the town centre and everyday
+            conveniences, while staying peaceful enough to feel like a retreat.</p>
+          <img loading="lazy" src="assets/exterior.jpg" width="1200" height="800"
+            alt="Exterior of Aster House with a garden entrance and warm evening lighting">
+        </div>
+        <aside class="mapcard">
+          <h3>Aster House</h3>
+          <address>12 Garden Road, Hanamkonda, Telangana</address>
+          <dl>
+            <dt>Check-in</dt>
+            <dd>From 2:00 PM</dd>
+            <dt>Check-out</dt>
+            <dd>By 11:00 AM</dd>
+            <dt>Reception</dt>
+            <dd>Available 24 hours</dd>
+            <dt>Breakfast</dt>
+            <dd>7:00 AM – 10:30 AM</dd>
+          </dl>
+          <p><a href="tel:+919876567890">+91 98765 67890</a><br><a
+              href="mailto:stay@asterhouse.example">stay@asterhouse.example</a></p>
+          <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Hanamkonda+Telangana"
+            target="_blank" rel="noopener">Get Directions</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Make Your Next Stay Different.</h2>
+        <p>Tell us when you're visiting and we'll help you find the right room for your stay.</p><a
+          class="btn btn-light" href="#availability">Check Availability</a>
+      </div>
+    </section>
+
+    <section class="sec" id="contact">
+      <div class="wrap narrow">
+        <header class="sh">
+          <p class="label dark">Inquiry</p>
+          <h2>Plan Your Stay</h2>
+        </header>
+        <form id="stayForm" novalidate>
+          <div class="f"><label for="c-name">Full Name</label><input id="c-name" name="name" autocomplete="name"><small
+              class="err" id="e-name"></small></div>
+          <div class="f"><label for="c-phone">Phone Number</label><input id="c-phone" name="phone" type="tel"
+              autocomplete="tel"><small class="err" id="e-phone"></small></div>
+          <div class="f"><label for="c-email">Email Address</label><input id="c-email" name="email" type="email"
+              autocomplete="email"><small class="err" id="e-email"></small></div>
+          <div class="f"><label for="c-guests">Guests</label><input id="c-guests" name="guests" type="number" min="1"
+              max="6"><small class="err" id="e-guests"></small></div>
+          <div class="f"><label for="c-in">Check-in Date</label><input id="c-in" name="in" type="date"><small
+              class="err" id="e-in"></small></div>
+          <div class="f"><label for="c-out">Check-out Date</label><input id="c-out" name="out" type="date"><small
+              class="err" id="e-out"></small></div>
+          <div class="f full"><label for="c-room">Room Preference</label><select id="c-room" name="room">
+              <option value="">Select</option>
+              <option>Deluxe Room</option>
+              <option>Garden Suite</option>
+              <option>Aster Suite</option>
+              <option>Not Sure Yet</option>
+            </select><small class="err" id="e-room"></small></div>
+          <div class="f full"><label for="c-msg">Message</label><textarea id="c-msg" name="msg" rows="4"></textarea>
+          </div>
+          <div class="full"><button class="btn" type="submit">Send Inquiry</button>
+            <p class="msg" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap fg">
+      <div><a class="brand" href="#home">Aster House</a>
+        <p>A refined boutique stay in Hanamkonda, built around comfort, calm, and warm hospitality.</p>
+      </div>
+      <div>
+        <h3>Explore</h3><a href="#rooms">Rooms</a><a href="#experience">Experience</a><a
+          href="#amenities">Amenities</a><a href="#gallery">Gallery</a>
+      </div>
+      <div>
+        <h3>Rooms</h3><a href="#rooms">Deluxe Room</a><a href="#rooms">Garden Suite</a><a href="#rooms">Aster Suite</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>12 Garden Road, Hanamkonda, Telangana<br>+91 98765 67890<br>stay@asterhouse.example</p>
+        <p>Check-in from 2:00 PM<br>Check-out by 11:00 AM</p>
+        <p class="soc"><a href="#home">Instagram</a> · <a href="#home">Facebook</a></p>
+      </div>
+    </div>
+    <p class="copy">© 2026 Aster House. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
